@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+    tools:context=".loginActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="347dp"
+        app:srcCompat="@drawable/sf_music" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:hint="Nama"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#fff"
+        />
+    <EditText
+        android:id="@+id/editUserRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Username"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#fff"
+        />
+    <EditText
+        android:id="@+id/editPassRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#fff"
+        />
+    <Button
+        android:id="@+id/actionSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bggradient"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        />
+
+</LinearLayout>
