@@ -123,11 +123,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         about();
                         break;
                     case R.id.actionLogout:
-                        SharedPreferences sharedPreferences = getSharedPreferences("login", MODE_PRIVATE);
+                        SharedPreferences sharedPreferences = getSharedPreferences("islogin", MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.clear();
                         editor.commit();
-
                         Intent intent = new Intent(MainActivity.this, loginActivity.class);
                         startActivity(intent);
                         finish();
