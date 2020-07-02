@@ -26,12 +26,15 @@ public class FavoritesDBHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(TABLE_CREATE);
+        db.execSQL("CREATE TABLE user (id INTEGER PRIMARY KEY AUTOINCREMENT,nama TEXT,user TEXT,pass TEXT)");
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_SONGS);
+        db.execSQL("DROP TABLE IF EXISTS  user");
         db.execSQL(TABLE_CREATE);
+        db.execSQL("CREATE TABLE user (id INTEGER PRIMARY KEY AUTOINCREMENT,user TEXT,pass TEXT)");
     }
 }

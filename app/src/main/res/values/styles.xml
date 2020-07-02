@@ -12,5 +12,7 @@
         <item name="android:background">@color/colorPrimary</item>
         <item name="background">@color/colorAccent</item>
     </style>
+    <style name="Theme_MaterialComponents_Light_Dialog">Theme_MaterialComponents_Light_Dialog
+    </style>
 
 </resources>
