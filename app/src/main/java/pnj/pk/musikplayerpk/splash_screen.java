@@ -15,12 +15,12 @@ public class splash_screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        sharedPreferences = getSharedPreferences("login",MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("islogin",MODE_PRIVATE);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                if(sharedPreferences.getBoolean("login",true)){
+                if(sharedPreferences.getBoolean("login",false)){
                     Intent intent = new Intent(splash_screen.this,MainActivity.class);
                     startActivity(intent);
                     finish();

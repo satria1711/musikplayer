@@ -34,7 +34,7 @@ public class loginActivity extends AppCompatActivity {
         editPass = findViewById(R.id.editpass);
         actionLogin = findViewById(R.id.actionLogin);
         actionSignup = findViewById(R.id.actionRegister);
-        sharedPreferences = getSharedPreferences("login",MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("islogin",MODE_PRIVATE);
 
         actionLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +68,7 @@ public class loginActivity extends AppCompatActivity {
             if(cursor.moveToFirst()) {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putBoolean("login",true);
+                editor.commit();
 
                 Toast.makeText(this,"Login Berhasil",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, MainActivity.class);
